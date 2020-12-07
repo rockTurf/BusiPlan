@@ -2,13 +2,11 @@ package com.srj.common.utils;
 
 
 import com.srj.web.util.StringUtil;
-import org.junit.Test;
 
 import java.util.LinkedList;
 
 public class TestUtil {
 
-	@Test
 	public void test(){
 		LinkedList<String> list = FileUtil.readFileByLines("C:\\Users\\Dell\\Desktop\\work\\ZGZYZZB.sql");
 		StringBuffer buffer = new StringBuffer();
@@ -41,7 +39,6 @@ public class TestUtil {
 
 	}
 
-	@Test
 	public void test1(){
 		String s = "cf0000";
 		if("CF0000".equals(s.toUpperCase())){
