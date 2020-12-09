@@ -13,11 +13,12 @@ public class MyWebMvcConfigurerAdapter extends WebMvcConfigurationSupport {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+        super.addResourceHandlers(registry);
     }
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/loginPage").setViewName("loginPage");
+        //registry.addViewController("/**").setViewName("loginPage");
     }
 
 
